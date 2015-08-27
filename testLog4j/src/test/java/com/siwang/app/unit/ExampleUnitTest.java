@@ -1,6 +1,6 @@
 package com.siwang.app.unit;
 
-import com.siwang.app.PingVerticle;
+import com.siwang.app.StarterVerticle;
 import org.junit.Test;
 
 /*
@@ -24,7 +24,7 @@ public class ExampleUnitTest {
 
   @Test
   public void testVerticle() {
-    PingVerticle vert = new PingVerticle();
+    StarterVerticle vert = new StarterVerticle();
 
     // do something with verticle
   }

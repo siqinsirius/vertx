@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="info">
 	<Appenders>
-		<RollingFile name="rollingFileAppender" fileName="C:\Users\Siqin\logs\testLog4J.log"
-			filePattern="C:\Users\Siqin\logs\testLog4J-%d{yyyy-MM-dd}-%i.log">
+		<RollingFile name="rollingFileAppender" fileName="logs/testLog4J.log"
+			filePattern="logs/testLog4J-%d{yyyy-MM-dd}-%i.log">
 			<PatternLayout pattern="%-5p %d [%t] %c{1} - %m%n" />
 			<Policies>
 				<TimeBasedTriggeringPolicy /> <!-- Rotated everyday -->
-				<SizeBasedTriggeringPolicy size="1 KB" /> <!-- Or every 100 MB -->
+				<SizeBasedTriggeringPolicy size="3 MB" /> <!-- Or every 100 MB -->
 			</Policies>
 		</RollingFile>
 		<Console name="STDOUT" target="SYSTEM_OUT">
@@ -16,7 +16,7 @@
 	<Loggers>
 		<Root level="debug">
 			<AppenderRef ref="rollingFileAppender" />
-			<AppenderRef ref="STDOUT" />
+			<!--<AppenderRef ref="STDOUT" />-->
 		</Root>
 	</Loggers>
 </Configuration>
