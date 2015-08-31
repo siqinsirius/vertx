@@ -1,0 +1,5 @@
+org/vertx/java/core/logging/impl/Log4j2LogDelegate.class
+org/vertx/java/core/logging/impl/Log4j2LogDelegateFactory.class
+com/siwang/app/TestWorkerVerticle.class
+com/siwang/app/TestVerticle.class
+com/siwang/app/StarterVerticle.class

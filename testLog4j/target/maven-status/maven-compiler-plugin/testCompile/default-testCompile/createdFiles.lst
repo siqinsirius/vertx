@@ -1,0 +1,4 @@
+com/siwang/app/integration/java/BasicIntegrationTest.class
+com/siwang/app/integration/java/SomeVerticle.class
+com/siwang/app/unit/ExampleUnitTest.class
+com/siwang/app/integration/java/ModuleIntegrationTest.class

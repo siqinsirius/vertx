@@ -22,6 +22,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.vertx.java.core.Handler;
 import org.vertx.java.core.eventbus.Message;
+import org.vertx.java.core.logging.impl.LoggerFactory;
 import org.vertx.java.platform.Verticle;
 
 /*
@@ -31,9 +32,11 @@ public class StarterVerticle extends Verticle {
 
   public void start() {
 
-    container.logger().debug();
+    //container.logger().debug();
 
-    Logger logger = LogManager.getLogger(this.getClass());
+    //Logger logger = LogManager.getLogger(this.getClass());
+
+    org.vertx.java.core.logging.Logger logger = LoggerFactory.getLogger(this.getClass());
 
     logger.info("Start main verticle");
 
